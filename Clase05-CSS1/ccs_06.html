@@ -1,51 +1,62 @@
-Titulo: CSS6
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS6</title>
+    <style>span.a {
+        display: inline;
+        /* Es la opcion por defecto de span */
+        width: 100px;
+        height: 1000px;
+        padding: 5px;
 
-Etiqueta: style
-        span.a {
-            display: inline;
-            /* Es la opcion por defecto de span */
-            width: 100px;
-            height: 1000px;
-            padding: 5px;
+    }
 
-        }
+    span.b {
+        display: inline-block;
+        width: 200px;
+        height: 60px;
+        padding: 5px;
+        border: 1px solid blue;
+        background-color: yellow;
+    }
 
-        span.b {
-            display: inline-block;
-            width: 200px;
-            height: 60px;
-            padding: 5px;
-            border: 1px solid blue;
-            background-color: yellow;
-        }
+    span.c {
+        display: block;
+        width: 100px;
+        height: 100px;
+        padding: 5px;
+        border: 1px solid blue;
+        background-color: yellow;
+    }</style>
+</head>
+<body>
+    <h1>Propiedad Display</h1>
+    <h2>Display: inline</h2>
+    
+    <div style="background-color: yellow; hidden=yes">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, iste magnam. Neque harum vel iusto quibusdam iure, molestiae aliquam aspernatur, nemo blanditiis tenetur itaque, cumque enim. Reprehenderit in consectetur sunt?</div>
 
-        span.c {
-            display: block;
-            width: 100px;
-            height: 100px;
-            padding: 5px;
-            border: 1px solid blue;
-            background-color: yellow;
-        }
+    <span class="a">Span 1</span>
+    <span class="a">Span 2</span>
+    <p>Gravida nisl sit amet facilisis. Nullam cursus fermentum velit sed laoreet.</p>
+    <br>
+    <h2>Display: inline-block</h2>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi beatae quae officia, aut rem consequuntur suscipit ratione eius eveniet eum dolor ducimus pariatur sunt, blanditiis autem numquam repellat consequatur saepe.</div>
+    <br>
+    <span class="b">Span 1</span>
+    <span class="b">Span 2</span>
+    <br>
+    <p>Gravida nisl sit amet facilisis. Nullam cursus fermentum velit sed laoreet.</p>
+    <br>
+    <h2>Display: block</h2>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate eaque laborum nihil. Possimus, assumenda. Illo delectus eum commodi, veritatis tempore vitae consequatur molestiae ratione vel quas nobis illum officiis qui.</div>
+    <br>
+    <span class="c">Span 1</span>
+    <span class="c">Span 2</span>
+    <br>
+    <p>gravida nisl sit amet facilisis. Nullam cursus fermentum velit sed laoreet.</p>
 
-Propiedad Display:(en h1)
 
-Etiqueta: h2 Texto: display: inline
-Etiqueta: div style="background-color: yellow; hidden=yes" Texto: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet
-consequat. Aliquam erat volutpat. 
-Etiqueta: span class="a" Texto: Span 1 
-Etiqueta: span class="a" Texto: Span 2 
-gravida nisl sit amet facilisis. Nullam cursus fermentum velit sed laoreet.
-
-Etiqueta: h2 Texto: display: inline-block
-Etiqueta: div Texto: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet consequat. Aliquam erat volutpat. 
-Etiqueta: span class="b" Texto: Span 1 (inline-block) 
-Etiqueta: span class="b" Texto: Span 2 (inline-block) 
-gravida nisl sit amet facilisis. Nullam cursus fermentum velit sed laoreet.
-
-Etiqueta: h2 Texto: display: block
-Etiqueta: div Texto: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet consequat. Aliquam erat volutpat. 
-Etiqueta: span class="c" Texto: Span 1 (block)
-Etiqueta: span class="c" Texto: Span 2 (block)
-gravida nisl sit amet facilisis. Nullam cursus fermentum velit sed laoreet.
-
+</body>
+</html>
