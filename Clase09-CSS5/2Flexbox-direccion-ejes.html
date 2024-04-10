@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dirección de los ejes</title>
+    <style>
+         code {
+            background-color: yellow;
+            font-weight: bold;
+        }  
+        .flex-containerh {
+            display: inline-flex;   
+            flex-direction: row-reverse;
+            background-color: yellowgreen;
+        }
+        .flex-containerh > div {  
+            color: white;
+            background-color: green;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+        }
+        .flex-containerv {
+            display: inline-flex;   
+            flex-direction: column-reverse;
+            background-color: orangered;
+        }
+        .flex-containerv > div {  
+            color: white;
+            background-color: orange;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+        }
+        .flex-reverseh {
+            display: flex;   
+            flex-direction: row-reverse;
+            background-color: yellowgreen;
+        }
+        .flex-reverseh > div {  
+            color: white;
+            background-color: green;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+        }        
+    </style>
+</head>
+<body>
+    <h3>Flexbox | Dirección de los ejes</h3>
+    <p>Existen dos propiedades principales para manipular la dirección y comportamiento de los ítems a lo largo del eje principal del contenedor.</p>
+    <p>Una es <code>flex-direction</code>. Podemos modificar la dirección del eje principal del contenedor para que se oriente en horizontal (por defecto) o en vertical. </p>
+    <h4>Horizontal:</h4>
+    <div class="flex-containerh">
+        <div>Itaem 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+    </div>
+    <h4>Vertical:</h4>
+    <div class="flex-containerv">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+    </div>
+    <h4>Horizontal con row-reverse:</h4>
+    <p>Además, también podemos incluir el sufijo <code>-reverse</code> para indicar que coloque los ítems en orden inverso.</p>
+    <div class="flex-reverseh">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+    </div>
+    <p><code>flex-wrap: wrap;</code> y <code>flex-wrap: wrap-reverse;</code> permiten el "desbordamiento" hacia la linea (o columna) siguiente. En la práctica, gracias a esto podemos tener tener contenedores multilinea / multicolumna. El valor por defecto es <code>flex-wrap: nowrap;</code></p>
+    <div class="flex-containerh" style="flex-wrap: wrap-reverse;">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+        <div>Item 4</div>
+        <div>Item 5</div>
+        <div>Item 6</div>
+    </div>
+    <p>Esto nos permite tener un control muy alto sobre el orden de los elementos en una página.
+    </p>
+
+
+
+</body>
+</html>
+    
