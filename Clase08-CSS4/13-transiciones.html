@@ -1,14 +1,11 @@
-Titulo: Transiciones
-Etiqueta: style Texto: 
-        /*------------- TRANSICIONES -------------*/
-        /*Truco: Si nos fijamos bien, este estilo se aplica sólo al
-            mover el ratón sobre el enlace (transición de entrada).
-            Sin embargo, si movemos el ratón fuera del enlace, no se
-            produce transición sino que realiza el cambio de forma
-            brusca. Si movemos las propiedades de transición al primer
-            bloque (a {}), se aplican tanto en las transiciones
-            de entrada como en las de salida.*/
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transiciones</title>
+    <style>
         a {
             background: #DDD;
             color: #222;
@@ -29,8 +26,12 @@ Etiqueta: style Texto:
             transition-timing-function: ease-in;
             /*inicio lento, luego normal*/
         }
-Etiqueta: h3 Texto: Transiciones
+    </style>
+</head>
+<body>
+    <h3>Transiciones</h3>
+    <p>Las transiciones CSS le permiten cambiar los valores de una propiedad, durante un período determinado. Se basan en un principio muy básico: conseguir un cambio de estilo con un efecto suavizado entre un estado inicial y un estado final.</p>
+    <a href="">Enlace</a>
+</body>
+</html>
 
-Etiqueta: p Texto: Las transiciones CSS le permiten cambiar los valores de una propiedad, durante un período determinado. Se basan en un principio muy básico: conseguir un cambio de estilo con un efecto suavizado entre un estado inicial y un estado final.
-
-Etiqueta: a href="" Texto: Enlace
