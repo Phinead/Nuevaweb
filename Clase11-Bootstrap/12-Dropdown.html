@@ -1,18 +1,27 @@
-Bootstrap Example
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Example</title>
+  <link rel="stylesheet" href="htps://maxcdtn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-Etiqueta: div class="container mt-3"
-  Etiqueta: h2 Texto: Dropdowns
+</head>
+<body>
+  <div class="container mt-3">
+    <h2>Dropdowns</h2>
+    <p>La clase .dropdown nos permite crear menues dropdown</p>
+    <div class="dropdown">
+      <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"></button>
+      <ul class="dropdown-menu"></ul>
+      <li a class="dropdown-item" href="">Link 1</li>
+      <li a class="dropdown-item" href="">Link 2</li>
+      <li a class="dropdown-item" href="">Link 3</li>
+    </div>
+  </div>
 
-  Etiqueta: p Texto: La clase .dropdown nos permite crear menues dropdown
-                            
-  Etiqueta: div class="dropdown"
-    Etiqueta: button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
-      Dropdown button
-    
-    Etiqueta: ul class="dropdown-menu"
-      Etiqueta: li Etiqueta: a class="dropdown-item" href="#" Texto: Link 1
-      Etiqueta: li Etiqueta: a class="dropdown-item" href="#" Texto: Link 2
-      Etiqueta: li Etiqueta: a class="dropdown-item" href="#" Texto: Link 3
-
-  Cierre div
-Cierre div
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
